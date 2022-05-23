@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <title>Contact - Zeph Frear Hanson</title>
+        
+<header class="header">
+        <nav class="navbar">
+            <img src="frame1.png" class="nav-logo">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <script>const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+            const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        }</script>
+        </header>
+    </head>
+    <body>
+        <section class="gall">
+                <h2>Video Gallery</h2>
+            <p>These are some projects I have done for school, etc. More projects are in the pipeline.</p>
+                <iframe
+                src="https://www.youtube.com/embed/AaER8sK-C_Q">
+                </iframe>
+                <iframe 
+                src="https://www.youtube.com/embed/u9guIatXaWs">
+                </iframe>
+                <iframe 
+                src="https://www.youtube.com/embed/UVrJVvR-QiI">
+                </iframe>
+            </section>
+        <section class="gall">
+                <h2>Photo Gallery</h2>
+            <p>These are some photos I've taken for various things</p>
+                <img class="phtp" src="photo1.jpg">
+                <img class="phtp" src="photo2.jpg">
+                <img class="phtp" src="photo3.png">
+                <img class="phtp" src="photo4.HEIC">
+                <img class="phtp" src="photo5.JPG">
+                <img class="phtp" src="photo6.JPG">
+            </section>
+    </body>
+    
+    <footer>
+        <h4>© - Zeph Frear Hanson 2022</h4>
+        <section class="footcont">
+        <h4>Ways to contact</h4>
+            <li><a href="mailto:zephfh04@gmail.com">Email</a></li>
+            <li><a href="https://www.youtube.com/channel/UCRKq-mK8QWkoX40fXxZ9ygA">Youtube</a></li>
+            <li><a href="https://www.linkedin.com/in/zephaniah-frear-hanson-92895a20b/">LinkdIN</a></li>
+        </section>
+    </footer>
+</html>
+

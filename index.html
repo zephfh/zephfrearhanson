@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <title>Home - Zeph Frear Hanson</title>
+        
+<header class="header">
+        <nav class="navbar">
+            <img src="frame1.png" class="nav-logo">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Portfolio</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    
+    <script>const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    
+    const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+}</script>
+</header>
+            
+            <div class="container">
+                <img class="hero" src="profile.JPG">
+            <div class="herotext">
+                <h2>Zephaniah<br>Frear Hanson</h2>
+                <h><b>I'm Zeph, a student at the ARA Broadcasting school in NZ studying a bachelors degree in broadcasting communications for Television production.</b></h>
+            </div>
+        </div>
+    </head>
+    <body>
+        <section class="body">
+            <section class="pers">
+                <h2>Personal note</h2>
+                <p>I am a driven, hardworking individual who loves a challenge and problem solving. I love helping people out with any problems they may have no matter the medium and this would reflect in my performance on any job I may be given. <br><br>I would love to work in the media production industry in the future, I have a passion for marketing and advertising so to be able to do some stuff with that would be my end goal. I would love to be able to work with companies and movements to help them with their marketing.</p>
+            </section>
+            <section class="ski">
+                <h2>Skills</h2>
+                <p>I have skills in a wide range photo, video, and audio softwares such as Adobe Photoshop, Adobe Illustartor, Final Cut Pro X, Adobe Premiere Pro, Adobe After Effects, IMovie, Windows Movie Maker, Audacity and GarageBand.<br><br> As well as that I am also familiar with coding languages such as python, html, CSS, Javascript and SQL</p>
+            </section>
+            <section class="qual">
+                <h2>Qualifications</h2>
+                <p>
+                <li>National Certificate of Educational Achievement at Level 1 (Merit)</li>
+                <li>National Certificate of Educational Achievement at Level 2</li>
+                <li>National Certificate of Educational Achievement at Level 3</li>
+                <li>Merit endoresment for Digital Technologies in Level 1</li>
+                <p></p>
+            </section>
+        </section>
+    </body>
+    
+    <footer>
+        <h4>© - Zeph Frear Hanson 2021</h4>
+        <section class="footcont">
+        <h4>Ways to contact</h4>
+            <li><a href="mailto:zephfh04@gmail.com">Email</a></li>
+            <li><a href="https://www.youtube.com/channel/UCRKq-mK8QWkoX40fXxZ9ygA">Youtube</a></li>
+            <li><a href="https://www.linkedin.com/in/zephaniah-frear-hanson-92895a20b/">LinkdIN</a></li>
+        </section>
+    </footer>
+</html>
